@@ -1,6 +1,6 @@
 {
   "name": "edc-pipe-to-buffer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/stierma1/edc-pipe-to-buffer#readme",
   "dependencies": {
-    "basic-distributed-computation": "^1.0.2"
+    "basic-distributed-computation": "^1.0.2",
+    "stream-to-array": "^2.2.0"
   }
 }

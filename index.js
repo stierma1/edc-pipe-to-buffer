@@ -1,7 +1,7 @@
 "use strict"
 
 var Worker = require("basic-distributed-computation").Worker;
-var Stream = require("stream").Readable;
+var toArray = require('stream-to-array')
 
 class PipeToBuffer extends Worker {
   constructor(parent){
@@ -13,7 +13,7 @@ class PipeToBuffer extends Worker {
     if(inputKey){
       inVal = req.body[inputKey];
     }
-    
+
     toArray(inVal)
       .then(function (parts) {
         var buffers = []
