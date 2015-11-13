@@ -33,8 +33,6 @@ class PipeToBuffer extends Worker {
       }).finally(() => {
         req.next();
       })
-
-    }
   }
 }
 
